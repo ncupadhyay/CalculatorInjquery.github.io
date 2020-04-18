@@ -69,14 +69,17 @@
 				<td><button id="b9" >9</button></td>
 			</tr>
 			<tr>
+				<td><button id="b11">-</button></td>
+				<td><button id="b19" >0</button></td>
 				<td><button id="b10" >+</button></td>
-				<td><button id="b11" >-</button></td>
-				<td><button id="b12" >*</button></td>
 			</tr>
 			<tr>
 				<td><button id="b13" >/</button></td>
 				<td><button id="b14" >clear</button></td>
-				<td ><button id="b15" >=</button></td>
+				<td><button id="b12" >*</button></td>
+			</tr>
+			<tr >
+				<td colspan="3" ><button id="b15" >=</button></td>
 			</tr>
 		</table>
 		
@@ -128,6 +131,10 @@
 			});
 			$('#b9').click(function(){
 				no +="9";
+				$('#la').html(no);
+			});
+			$('#b19').click(function(){
+				no +="0";
 				$('#la').html(no);
 			});
 
